@@ -36,5 +36,28 @@ MONGODB_URI=<your mongodb uri>
 npm run dev
 ```
 
-### Optional: in case of hosting on servers
+## Optional: in case of hosting on servers
 You can use a tool like `pm2` to manage running the website. Or, you can host your own instance of this project on Vercel/Heroku.
+
+## Self-hosted API
+The API that is the backbone of this project is accessible by the developers.
+
+Supported endpoints:
+
+### Endpoint: /api/files
+**Method:** GET
+
+**Function:** This endpoint will return the slugs (id) of all the available atombin documents
+
+### Endpoint: /api/files
+**Method:** POST
+
+**Function:** This endpoint will allow you to create new documents to atombin
+
+**Body:**
+- `content` - The actual content of the code
+
+### Endpoint: /api/files/{id}
+**Method:** GET
+
+**Function:** Get the content of any existing post using its id
