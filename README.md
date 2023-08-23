@@ -9,7 +9,7 @@ A lightweight self-hostable pastebin for storing code in your preferred langage
 - MongoDB (`mongoose`)
 
 ## Building
-> **Note:** Docker compatibility is currently in progerss
+> **Note:** Docker compatibility is currently in progress
 
 1. Clone the repository
 ```
