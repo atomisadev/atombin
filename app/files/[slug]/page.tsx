@@ -17,16 +17,6 @@ type RouteParams = {
   slug: string;
 };
 
-export async function generateStaticParams() {
-  const data = await fetch("/api/files").then((res) => res.json());
-
-  const paths = data.allSlugs.map((file: { slug: string }) => ({
-    params: { slug: file.slug },
-  }));
-
-  return { paths, fallback: false };
-}
-
 export default function File({ params }: { params: RouteParams }) {
   const router = useRouter();
   const slug = params.slug;
