@@ -17,7 +17,7 @@ type RouteParams = {
   slug: string;
 };
 
-export async function generateStaticPaths() {
+export async function generateStaticParams() {
   const data = await fetch("/api/files").then((res) => res.json());
 
   const paths = data.allSlugs.map((file: { slug: string }) => ({
