@@ -61,3 +61,5 @@ Supported endpoints:
 **Method:** GET
 
 **Function:** Get the content of any existing post using its id
+
+Please note that these endpoints were not made with developer experience in mind. So, it isn't optimized for the best and easiest developer experience as this is something I hacked together in like an hour as a challenge.
